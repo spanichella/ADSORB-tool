@@ -43,8 +43,10 @@ where:
   - <TO BE COMPLETED>
   
 ## References
+
 [1] <TO BE COMPLETED>
  DOI: <TO BE COMPLETED>
+  
 [2] <TO BE COMPLETED>
  DOI: <TO BE COMPLETED>
 

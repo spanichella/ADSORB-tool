@@ -60,6 +60,10 @@ Then run Requirement-Collector-ML-Component-1.0.jar as described later.
 
 ### TO RUN THE TOOL:
 
+**Demonstration Video:**
+
+<TBD>
+
 **Demonstration Examples (CONFIG FILES, Command LINE TOOL examples):**
 Requirement-Collector-ML-Component-1.0.jar tool accepts in input *xml configuration files* for classifying requirement specification from user reviews and transcripts. 
 
@@ -200,8 +204,6 @@ Running examples are for for Unix/Linux/MacOS systems.
 		```java -cp  Requirement-Collector-ML-Component-1.0.jar org.zhaw.ch.manager.pipeline.MainPipeline "ORACLE_AND_TbD_ANALYSIS"  <LOCAL PATH TO REPLACE>/Resources/Reviews-Dataset//ORACLE_AND_TbD_ANALYSIS-REQ-SPECIFICATIONS.xml```
 	- *COMMAND 2 (the command that generate perform the ML analysis):*
 		```java -cp  Requirement-Collector-ML-Component-1.0.jar org.zhaw.ch.manager.pipeline.MainPipeline "ML_ANALYSIS"  <LOCAL PATH TO REPLACE>/Resources/Reviews-Dataset/ML_ANALYSIS-REQ-SPECIFICATIONS.xml```
-
-**Demonstration Video:**
 
 ## References
 

@@ -35,9 +35,9 @@ Inside this folder you find the
           - the folder ***RE-meeting-Transcripts***, we explain the content of this folder later.
 
 **Java and R-scripts PRE-REQUISITIES**
->The command line tool ***Requirement-Collector-ML-Component-1.0.jar*** requires
-> >  *java version "1.8.0_211*
-> >  and the following R *tm, stringr, stopwords, slam, snakecase, data.table, XML, dplyr* installed
+The command line tool ***Requirement-Collector-ML-Component-1.0.jar*** requires
+  - *java version "1.8.0_211*
+  - and the following R *tm, stringr, stopwords, slam, snakecase, data.table, XML, dplyr* installed
 
 Thus, as ***pre-requisities it is required to verify that*** under the R environment, following R code does not generate errors, and that all required packages are installed:
 ```

@@ -58,8 +58,8 @@ if (!require(dplyr)){ install.packages("dplyr") }
 ```
 
 ***Another requirement is to update the local paths of XML configuration files (```<LOCAL PATH TO REPLACE>```) shared as examples in the specific folders***:
-          - the folder ***Reviews-Dataset***, we explain the content of this folder later.
-          - the folder ***RE-meeting-Transcripts***, we explain the content of this folder later.
+  - the folder ***Reviews-Dataset***, we explain the content of this folder later.
+  - the folder ***RE-meeting-Transcripts***, we explain the content of this folder later.
 Then run Requirement-Collector-ML-Component-1.0.jar as described later.
 
 ### TO RUN THE TOOL:

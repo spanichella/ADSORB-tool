@@ -6,6 +6,8 @@ nameOfAttributeID2  <- args[4]
 nameOfAttributeText2  <- args[5]
 nameOfAttributeClass2  <- args[6]
 
+## @author sebastiano panichella
+
 if (!require(stringr)){ install.packages("stringr") } 
 
 #load the libraries...

@@ -43,7 +43,7 @@ java -classpath <TO BE COMPLETED>
 
 where:
   - [MYPATH] is the path in which the ...  
-  - <TO BE COMPLETED>
+  - <TO BE COMPLETED> 
   - <TO BE COMPLETED>
   
 ## References

@@ -189,7 +189,7 @@ NOTE: The followin examples of config files are customized for the example of da
 
 ```
 
-***Command LINE TOOL examples):***
+***Command LINE TOOL examples:***
 
 Running examples are for for Unix/Linux/MacOS systems.
 

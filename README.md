@@ -36,7 +36,7 @@ Inside this folder you find the
 
 **Java and R-scripts PRE-REQUISITIES**
 The command line tool ***Requirement-Collector-ML-Component-1.0.jar*** requires
-  - *java version "1.8.0_211*
+  - *java version "1.8.0_211"*
   - and the following R *tm, stringr, stopwords, slam, snakecase, data.table, XML, dplyr* installed
 
 Thus, as ***pre-requisities it is required to verify that*** under the R environment, following R code does not generate errors, and that all required packages are installed:
@@ -53,8 +53,12 @@ if (!require(XML)){ install.packages("XML") }
 if (!require(dplyr)){ install.packages("dplyr") } 
 ```
 
-Please update the location of relevant files in the Requirement-Collector-ML-Component-1.0.jar configuration files shared as example in the ADSORB-tool folder. 
+***Another requirement is to update the location XML configuration files shared as example in the specific folders***:
+          - the folder ***Reviews-Dataset***, we explain the content of this folder later.
+          - the folder ***RE-meeting-Transcripts***, we explain the content of this folder later.
 Then run Requirement-Collector-ML-Component-1.0.jar as described later.
+
+### TO RUN THE TOOL:
 
 Requirement-Collector-ML-Component-1.0.jar tool accepts in input xml files having the structure showed
 in the following example:
@@ -63,8 +67,6 @@ in the following example:
 
 Requirement-Collector-ML-Component-1.0.jar classify the user review feedback and RE meeting specification according to relevant categories.  
 
-
-### TO RUN THE TOOL:
 Here we provide a running example from command Line:
 
 Running example for Unix/Linux/MacOS systems:

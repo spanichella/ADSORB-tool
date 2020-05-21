@@ -37,7 +37,7 @@ Inside this folder you find
 **Java and R-scripts PRE-REQUISITIES**
 The command line tool ***Requirement-Collector-ML-Component-1.0.jar*** requires
   - *java version "1.8.0_211"*
-  - and the following R *tm, stringr, stopwords, slam, snakecase, data.table, XML, dplyr* installed
+  - and the following R packages installed: *tm, stringr, stopwords, slam, snakecase, data.table, XML, dplyr* 
 
 Thus, as ***pre-requisities it is required to verify that*** under the R environment, following R code does not generate errors, and that all required packages are installed:
 ```
@@ -187,25 +187,25 @@ NOTE: The followin examples of config files are customized for the example of da
 
 ***Command LINE TOOL examples):***
 
-Requirement-Collector-ML-Component-1.0.jar classify the user review feedback and RE meeting specification according to relevant categories.  
+Running examples are for for Unix/Linux/MacOS systems.
 
-Here we provide a running example from command Line:
-
-Running example for Unix/Linux/MacOS systems:
-java -classpath <TO BE COMPLETED>
-
-where:
-  - [MYPATH] is the path in which the ...  
-  - <TO BE COMPLETED> 
-  - <TO BE COMPLETED>
+- **Running example for User reviews data**: Requirement-Collector-ML-Component-1.0.jar classify the user review feedback according to relevant 	categories.
+	- *COMMAND 1 (the command that generate the files required for the ML analysis):*
+		```java -cp  Requirement-Collector-ML-Component-1.0.jar org.zhaw.ch.manager.pipeline.MainPipeline "ORACLE_AND_TbD_ANALYSIS"  <LOCAL PATH TO REPLACE>/Resources/Reviews-Dataset/ORACLE_AND_TbD_ANALYSIS-REVIEWS.xml```
+	- *COMMAND 2 (the command that generate perform the ML analysis):*
+		```java -cp  Requirement-Collector-ML-Component-1.0.jar org.zhaw.ch.manager.pipeline.MainPipeline "ML_ANALYSIS"  <LOCAL PATH TO REPLACE>/Resources/Reviews-Dataset/ML_ANALYSIS-REVIEWS.xml```
+		
+- **Running example for Recorded transcripts data**: Requirement-Collector-ML-Component-1.0.jar classify RE meeting specification according to relevant categories.
+	- *COMMAND 1 (the command that generate the files required for the ML analysis):*
+		```java -cp  Requirement-Collector-ML-Component-1.0.jar org.zhaw.ch.manager.pipeline.MainPipeline "ORACLE_AND_TbD_ANALYSIS"  <LOCAL PATH TO REPLACE>/Resources/Reviews-Dataset//ORACLE_AND_TbD_ANALYSIS-REQ-SPECIFICATIONS.xml```
+	- *COMMAND 2 (the command that generate perform the ML analysis):*
+		```java -cp  Requirement-Collector-ML-Component-1.0.jar org.zhaw.ch.manager.pipeline.MainPipeline "ML_ANALYSIS"  <LOCAL PATH TO REPLACE>/Resources/Reviews-Dataset/ML_ANALYSIS-REQ-SPECIFICATIONS.xml```
 
 **Demonstration Video:**
 
 ## References
 
-[1] <TO BE COMPLETED>
- DOI: <TO BE COMPLETED>
+[1] Ruiz  and B. Hasselmann,  "Can We Design  Software as We  Talk: Aresearch  idea",  International  working  conference  on  Exploring  ModelingMethods for Systems Analysis and Development, 2020
   
-[2] <TO BE COMPLETED>
- DOI: <TO BE COMPLETED>
+[2] S.  Panichella,  A.  Di  Sorbo,  E.  Guzman,  C.  A.  Visaggio,  G.  Canfora,andH.  C.  Gall,  “Ardoc:  App  reviews  development  oriented  classifier,”International Symposium Foundations of Software Engineering, 2016
 

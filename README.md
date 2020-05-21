@@ -20,7 +20,7 @@ any later version.
 
 #### Get started with the *"Machine-Learning-classifier"* component of Requirement-Collector
 Please clone this repository and copy the content of the folder **"Requirement-Collector-ML-Component"** in a local folder of your choice.
-Inside this folder you find the 
+Inside this folder you find 
   - The jar file ***Requirement-Collector-ML-Component-1.0.jar***  of the *"Requirement-Collector-ML-Component"*, 
   - The folder ***"Resources"*** containing 
       - the folder ***R-scripts*** all required R executable files for enabling the automated classification of requirements  specification  from Requirement:
@@ -53,7 +53,7 @@ if (!require(XML)){ install.packages("XML") }
 if (!require(dplyr)){ install.packages("dplyr") } 
 ```
 
-***Another requirement is to update the location XML configuration files shared as example in the specific folders***:
+***Another requirement is to update the location XML configuration files shared as examples in the specific folders***:
           - the folder ***Reviews-Dataset***, we explain the content of this folder later.
           - the folder ***RE-meeting-Transcripts***, we explain the content of this folder later.
 Then run Requirement-Collector-ML-Component-1.0.jar as described later.
@@ -63,11 +63,12 @@ Then run Requirement-Collector-ML-Component-1.0.jar as described later.
 **Demonstration Examples (CONFIG FILES, Command LINE TOOL examples):**
 Requirement-Collector-ML-Component-1.0.jar tool accepts in input *xml configuration files* for classifying requirement specification from user reviews and transcripts. 
 
-***In the case of user review analysis the *xml configuration files* have the following structure:***
+***CONFIG FILES: In the case of user review analysis the *xml configuration files* have the following structure***
 
 NOTE: The followin examples of config files are customized for the example of data shared in this repository
 
 1) Config File "ORACLE_AND_TbD_ANALYSIS-REVIEWS.xml" - needed to create all relevant data for the ML analysis
+
 ```
 <?xml version="1.0"?>
 <company>
@@ -97,7 +98,8 @@ NOTE: The followin examples of config files are customized for the example of da
 	</ADSORB>
 </company>
 ```
-1) Config File "ML_ANALYSIS-REVIEWS.xml" - needed to performing the ML analysis
+2) Config File "ML_ANALYSIS-REVIEWS.xml" - needed to performing the ML analysis
+
 ```
 <?xml version="1.0"?>
 <company>
@@ -120,6 +122,51 @@ NOTE: The followin examples of config files are customized for the example of da
 </company>
 
 ```
+
+
+***CONFIG FILES: In the case of user review analysis the *xml configuration files* have the following structure***
+
+NOTE: The followin examples of config files are customized for the example of data shared in this repository
+
+1) Config File "ORACLE_AND_TbD_ANALYSIS-REQ-SPECIFICATIONS.xml" - needed to create all relevant data for the ML analysis
+
+```
+<?xml version="1.0"?>
+<company>
+	<ADSORB id="1">
+		<docs_location> <LOCAL PATH TO REPLACE>/R-resources/R-scripts/</docs_location>
+		<pathRScriptOracle> <LOCAL PATH TO REPLACE>/R-resources/R-scripts/Script-to-create-test-dataset-Req-Specifications.r</pathRScriptOracle>
+		# path where oracle is located
+		<baseFolder> <LOCAL PATH TO REPLACE>/R-resources/R-scripts/hassebjo</baseFolder>
+		# path oracle
+		<oracle_path> <LOCAL PATH TO REPLACE>/R-resources/R-scripts/hassebjo/truth_set_ReqSpecification.txt</oracle_path>
+		# possible values "User Reviews" or "Requirement Specifications"
+		<dataType>Requirement Specifications</dataType>
+		# possible values "id"
+		<nameOfAttributeID>id</nameOfAttributeID>
+		# possible values "review" and "req_specification"
+		<nameOfAttributeText>req_specification</nameOfAttributeText>
+		# possible values "class"
+		<nameOfAttributeClass>class</nameOfAttributeClass>
+		<pathTbDRScript> <LOCAL PATH TO REPLACE>/R-resources/R-scripts/MainScript.r</pathTbDRScript>
+		#path where training set files will be created
+		<documentsTrainingSet> <LOCAL PATH TO REPLACE>/R-resources/R-scripts/hassebjo/training-set-Req-Specifications</documentsTrainingSet>
+		#path where test set files will be created
+		<documentsTestSet> <LOCAL PATH TO REPLACE>/R-resources/R-scripts/hassebjo/test-set-Req-Specifications</documentsTestSet>
+		#path where simplified Oracle will be created
+		<simplifiedOracle_path> <LOCAL PATH TO REPLACE>/R-resources/R-scripts/hassebjo/truth_set-simplified-Req-Specifications.csv</simplifiedOracle_path>
+	</ADSORB>
+</company>
+```
+
+2) Config File "ML_ANALYSIS-REQ-SPECIFICATIONS.xml" - needed to performing the ML analysis
+
+```
+
+
+```
+
+***Command LINE TOOL examples):***
 
 Requirement-Collector-ML-Component-1.0.jar classify the user review feedback and RE meeting specification according to relevant categories.  
 

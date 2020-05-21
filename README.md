@@ -60,10 +60,66 @@ Then run Requirement-Collector-ML-Component-1.0.jar as described later.
 
 ### TO RUN THE TOOL:
 
-Requirement-Collector-ML-Component-1.0.jar tool accepts in input xml files having the structure showed
-in the following example:
+**Demonstration Examples (CONFIG FILES, Command LINE TOOL examples):**
+Requirement-Collector-ML-Component-1.0.jar tool accepts in input *xml configuration files* for classifying requirement specification from user reviews and transcripts. 
 
-<EXAMPLE TO BE ADDED>
+***In the case of user review analysis the *xml configuration files* have the following structure:***
+
+NOTE: The followin examples of config files are customized for the example of data shared in this repository
+
+1) Config File "ORACLE_AND_TbD_ANALYSIS-REVIEWS.xml" - needed to create all relevant data for the ML analysis
+```
+<?xml version="1.0"?>
+<company>
+	<ADSORB id="1">
+		# path where R scripts are located
+		<docs_location> <LOCAL PATH TO REPLACE>/Resources/R-scripts/</docs_location>
+		<pathRScriptOracle> <LOCAL PATH TO REPLACE>/Resources/R-scripts/Script-to-create-test-dataset.r</pathRScriptOracle>
+		# path where oracle is located
+		<baseFolder> <LOCAL PATH TO REPLACE>/Resources/Reviews-Dataset</baseFolder>
+		# path oracle
+		<oracle_path> <LOCAL PATH TO REPLACE>/Resources/Reviews-Dataset/truth_set_ICSME2015.csv</oracle_path>
+		# possible values "User Reviews" or "Requirement Specifications"
+		<dataType>User Reviews</dataType>
+		# possible values "id"
+		<nameOfAttributeID>id</nameOfAttributeID>
+		# possible values "review" and "req_specification"
+		<nameOfAttributeText>review</nameOfAttributeText>
+		# possible values "class"
+		<nameOfAttributeClass>class</nameOfAttributeClass>
+		<pathTbDRScript> <LOCAL PATH TO REPLACE>/Resources/R-scripts/MainScript.r</pathTbDRScript>
+		#path where training set files will be created
+		<documentsTrainingSet> <LOCAL PATH TO REPLACE>/Resources/Reviews-Dataset/training-set</documentsTrainingSet>
+		#path where test set files will be created
+		<documentsTestSet> <LOCAL PATH TO REPLACE>/Resources/Reviews-Dataset/test-set</documentsTestSet>
+		#path where simplified Oracle will be created
+		<simplifiedOracle_path> <LOCAL PATH TO REPLACE>/Resources/Reviews-Dataset/truth_set-simplified.csv</simplifiedOracle_path>
+	</ADSORB>
+</company>
+```
+1) Config File "ML_ANALYSIS-REVIEWS.xml" - needed to performing the ML analysis
+```
+<?xml version="1.0"?>
+<company>
+	<ADSORB id="1">
+		# possible values "Training_and_test_set" (traiing and test set specified) and "10-fold" (whole dataset specified)
+		<strategy>10-fold</strategy>
+		#path where the training set file was created
+		<pathTrainingSet> <LOCAL PATH TO REPLACE>/Resources/Reviews-Dataset/documents-preprocessed-review/tdm_full_trainingSet_with_oracle_info.csv</pathTrainingSet>
+		#path where the test set file was created
+		<pathTestSet> <LOCAL PATH TO REPLACE>/Resources/Reviews-Dataset/documents-preprocessed-review/tdm_full_testSet_with_oracle_info.csv</pathTestSet>
+		#path where the model (pathModel) will be created
+		<pathModel> <LOCAL PATH TO REPLACE>/Resources/Reviews-Dataset/documents-preprocessed-review/ML-method.model</pathModel>
+		#path whole dataset (for 10-fold validation)
+		<pathWholeDataset> <LOCAL PATH TO REPLACE>/Resources/Reviews-Dataset/documents-preprocessed-review/tdm_full_with_oracle_info_information giving.csv</pathWholeDataset>
+		# ML model to experiment, possible values: "J48", "PART", "NaiveBayes",  "IBk", "OneR", "SMO", "Logistic", "AdaBoostM1", "LogitBoost", "DecisionStump", "LinearRegression", "RegressionByDiscretization"
+		<machineLearningModel>J48</machineLearningModel>
+		#path where the results of the prediction  will be stored
+		<pathResultsPrediction> <LOCAL PATH TO REPLACE>/Resources/Reviews-Dataset/documents-preprocessed-review/resultsPrediction.txt</pathResultsPrediction>
+	</ADSORB>
+</company>
+
+```
 
 Requirement-Collector-ML-Component-1.0.jar classify the user review feedback and RE meeting specification according to relevant categories.  
 
@@ -76,7 +132,9 @@ where:
   - [MYPATH] is the path in which the ...  
   - <TO BE COMPLETED> 
   - <TO BE COMPLETED>
-  
+
+**Demonstration Video:**
+
 ## References
 
 [1] <TO BE COMPLETED>

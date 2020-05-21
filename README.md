@@ -11,6 +11,10 @@ Requirements-Collector: (Automating Requirements Specification from Elicitation 
 **Requirement-Collector Context:**
 ![](https://github.com/spanichella/Requirement-Collector-tool/blob/master/Pipeline_AutomatedRE-RE20-P%26D.png)
 
+**Demonstration Video:**
+
+TBD
+
 ### Description of the content of folder "Requirement-Collector-ML-Component":
 
 #### License
@@ -59,10 +63,6 @@ if (!require(dplyr)){ install.packages("dplyr") }
 Then run Requirement-Collector-ML-Component-1.0.jar as described later.
 
 ### TO RUN THE TOOL:
-
-**Demonstration Video:**
-
-<TBD>
 
 **Demonstration Examples (CONFIG FILES, Command LINE TOOL examples):**
 Requirement-Collector-ML-Component-1.0.jar tool accepts in input *xml configuration files* for classifying requirement specification from user reviews and transcripts. 

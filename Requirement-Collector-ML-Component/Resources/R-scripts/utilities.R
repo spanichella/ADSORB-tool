@@ -1,4 +1,6 @@
 
+# @author sebastiano panichella
+
 if (!require(snakecase)){ install.packages("snakecase") }
 if (!require(data.table)){ install.packages("data.table") }
 if (!require(XML)){ install.packages("XML") }

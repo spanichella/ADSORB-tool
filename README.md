@@ -31,13 +31,15 @@ Inside this folder you find the
            - *MainScript.r*
       - Example of data are provided to experiment with the automated classification of Audio Transcripts of Requirement meetings as well 
         as the automated classification of user reviews feedback:
-          - the folder ***Reviews-Dataset***
-          - the folder ***RE-meeting-Transcripts***
+          - the folder ***Reviews-Dataset***, we explain the content of this folder later.
+          - the folder ***RE-meeting-Transcripts***, we explain the content of this folder later.
 
->The command line tool uses the following open-source R libraries:
-> >  tm, stringr, stopwords, slam, snakecase, data.table, XML, dplyr
+**Java and R-scripts PRE-REQUISITIES**
+>The command line tool ***Requirement-Collector-ML-Component-1.0.jar*** requires
+> >  *java version "1.8.0_211*
+> >  and the following R *tm, stringr, stopwords, slam, snakecase, data.table, XML, dplyr* installed
 
-Thus, as **pre-requisities it is required to verify that** under the R environment, following R code does not generate errors, and all required packages are installed:
+Thus, as ***pre-requisities it is required to verify that*** under the R environment, following R code does not generate errors, and that all required packages are installed:
 ```
 #install packages if not installed yet
 print("We install packages if not installed yet")
@@ -51,17 +53,15 @@ if (!require(XML)){ install.packages("XML") }
 if (!require(dplyr)){ install.packages("dplyr") } 
 ```
 
-You can find the needed R scripts files for running the tool in the "/lib" folder contained in the ADSORB-tool.zip file
+Please update the location of relevant files in the Requirement-Collector-ML-Component-1.0.jar configuration files shared as example in the ADSORB-tool folder. 
+Then run Requirement-Collector-ML-Component-1.0.jar as described later.
 
-Please update the location of relevant files in the ADSORB configuration files shared as example in the ADSORB-tool folder. 
-Then run ADSORB as described later.
-
-ADSORB tool accepts in input xml files having the structure showed
+Requirement-Collector-ML-Component-1.0.jar tool accepts in input xml files having the structure showed
 in the following example:
 
 <EXAMPLE TO BE ADDED>
 
-ADSORB classify the user review feedback and RE meeting specification according to relevant categories.  
+Requirement-Collector-ML-Component-1.0.jar classify the user review feedback and RE meeting specification according to relevant categories.  
 
 
 ### TO RUN THE TOOL:

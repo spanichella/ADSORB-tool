@@ -11,7 +11,7 @@ Requirements-Collector: (Automating Requirements Specification from Elicitation 
 **Requirement-Collector Context:**
 ![](https://github.com/spanichella/Requirement-Collector-tool/blob/master/Pipeline_AutomatedRE-RE20-P%26D.png)
 
-### Description of the content of folder "Requirements-Collector":
+### Description of the content of folder "Requirement-Collector-ML-Component":
 
 #### License
 This program is a free software you can redistribute it under the terms of the GNU Public License

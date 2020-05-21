@@ -19,8 +19,14 @@ as published by the Free Software Fundation either version 2 of the License, or 
 any later version.
 
 #### Get started with the *"Machine-Learning-classifier"* component of Requirement-Collector
-Please clone this repository and copy the content of the folder **"Requirements-Collector"** a local folder of your choice.
-Inside this folder you find the *"Machine-Learning-classifier"* folder, containing all required executable files for enabling the automated classification of requirements  specification  from Requirement meetings transcripts and  user  feedback  in for of user reviews. Example of data are provided to experiment with the automated classification of Audio Transcripts of Requirement meetings as well as the automated classification of user reviews feedback.
+Please clone this repository and copy the content of the folder **"Requirement-Collector-ML-Component"** in a local folder of your choice.
+Inside this folder you find the 
+  - The jar file ***Requirement-Collector-ML-Component-1.0.jar***  of the *"Requirement-Collector-ML-Component"*, 
+  - The folder ***"Resources"*** containing 
+      - all required R executable files for enabling the automated classification of requirements  specification  from Requirement 
+        meetings transcripts and  user  feedback  in for of user reviews. 
+      - Example of data are provided to experiment with the automated classification of Audio Transcripts of Requirement meetings as well 
+        as the automated classification of user reviews feedback.
 
 >The command line tool uses the following open-source R libraries:
 > >  tm, stringr, stopwords, slam, snakecase, data.table, XML, dplyr

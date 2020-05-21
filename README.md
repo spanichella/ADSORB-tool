@@ -2,7 +2,7 @@
 
 Requirements-Collector: (Automating Requirements Specification from Elicitation Sessions and User Feedback) Tool - Version 1.0
 
-#### Authors: Sebastiano Panichella and Marcela Ruiz
+#### Authors: [Sebastiano Panichella](https://spanichella.github.io/index.html) and [Marcela Ruiz](https://www.marcelaruiz.eu/)
 
 ### Tool description:
 

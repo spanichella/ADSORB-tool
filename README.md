@@ -53,7 +53,7 @@ if (!require(XML)){ install.packages("XML") }
 if (!require(dplyr)){ install.packages("dplyr") } 
 ```
 
-***Another requirement is to update the location XML configuration files shared as examples in the specific folders***:
+***Another requirement is to update the local paths of XML configuration files (```<LOCAL PATH TO REPLACE>```) shared as examples in the specific folders***:
           - the folder ***Reviews-Dataset***, we explain the content of this folder later.
           - the folder ***RE-meeting-Transcripts***, we explain the content of this folder later.
 Then run Requirement-Collector-ML-Component-1.0.jar as described later.
@@ -65,7 +65,7 @@ Requirement-Collector-ML-Component-1.0.jar tool accepts in input *xml configurat
 
 ***CONFIG FILES: In the case of user review analysis the *xml configuration files* have the following structure***
 
-NOTE: The followin examples of config files are customized for the example of data shared in this repository
+NOTE: The following examples of config files are customized for the examples of data shared in this repository.
 
 1) Config File "ORACLE_AND_TbD_ANALYSIS-REVIEWS.xml" - needed to create all relevant data for the ML analysis
 

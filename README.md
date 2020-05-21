@@ -124,7 +124,7 @@ NOTE: The followin examples of config files are customized for the example of da
 ```
 
 
-***CONFIG FILES: In the case of user review analysis the *xml configuration files* have the following structure***
+***CONFIG FILES: In the case of transcripts specification analysis the *xml configuration files* have the following structure***
 
 NOTE: The followin examples of config files are customized for the example of data shared in this repository
 
@@ -162,6 +162,25 @@ NOTE: The followin examples of config files are customized for the example of da
 2) Config File "ML_ANALYSIS-REQ-SPECIFICATIONS.xml" - needed to performing the ML analysis
 
 ```
+<?xml version="1.0"?>
+<company>
+	<ADSORB id="1">
+		# possible values "Training_and_test_set" (training and test set specified) and "10-fold" (whole dataset specified)
+		<strategy>Training_and_test_set</strategy>
+		#path where the training set file was created
+		<pathTrainingSet> <LOCAL PATH TO REPLACE>/R-resources/R-scripts/documents-preprocessed-req_specification/tdm_full_trainingSet_with_oracle_info.csv</pathTrainingSet>
+		#path where the test set file was created
+		<pathTestSet> <LOCAL PATH TO REPLACE>/R-resources/R-scripts/documents-preprocessed-req_specification/tdm_full_testSet_with_oracle_info.csv</pathTestSet>
+		#path where the model (pathModel) will be created
+		<pathModel> <LOCAL PATH TO REPLACE>/R-resources/R-scripts/documents-preprocessed-req_specification/ML-method.model</pathModel>
+		#path whole dataset (for 10-fold validation)
+		<pathWholeDataset> <LOCAL PATH TO REPLACE>/R-resources/R-scripts/documents-preprocessed-req_specification/tdm_full_with_oracle_info_F.csv</pathWholeDataset>
+		# ML model to experiment, possible values: "J48", "PART", "NaiveBayes",  "IBk", "OneR", "SMO", "Logistic", "AdaBoostM1", "LogitBoost", "DecisionStump", "LinearRegression", "RegressionByDiscretization"
+		<machineLearningModel>J48</machineLearningModel>
+		#path where the results of the prediction  will be stored
+		<pathResultsPrediction> <LOCAL PATH TO REPLACE>/R-resources/R-scripts/documents-preprocessed-req_specification/resultsPrediction.txt</pathResultsPrediction>
+	</ADSORB>
+</company>
 
 
 ```

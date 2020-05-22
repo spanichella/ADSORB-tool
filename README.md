@@ -18,7 +18,7 @@ Requirements-Collector: (Automating Requirements Specification from Elicitation 
 
 ### Description of the content of folder "Requirement-Collector-ML-Component":
 
-#### License
+#### License 
 This program is a free software you can redistribute it under the terms of the GNU Public License
 as published by the Free Software Fundation either version 2 of the License, or (at your option)
 any later version.

@@ -13,7 +13,9 @@ Requirements-Collector: (Automating Requirements Specification from Elicitation 
 
 **Demonstration Video:**
 
-TBD
+<video width="320" height="240" controls>
+  <source src="DRONE.MP4" type="video/mp4">
+</video>
 
 ### Description of the content of folder "Requirement-Collector-ML-Component":
 

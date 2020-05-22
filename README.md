@@ -13,7 +13,8 @@ Requirements-Collector: (Automating Requirements Specification from Elicitation 
 
 **Demonstration Video:**
 
-[![Requirement-Collector-ML-Component Demonstration](https://img.youtube.com/vi/Baf18V6sN8E/0.jpg)](https://www.youtube.com/watch?v=Baf18V6sN8E)
+[![Requirement-Collector-ML-Component Demonstration](https://github.com/spanichella/Requirement-Collector-ML-Component/blob/master/0-sec.png)](https://www.youtube.com/watch?v=Baf18V6sN8E)
+- [Youtube link](https://www.youtube.com/watch?v=Baf18V6sN8E)
 
 ### Description of the content of folder "Requirement-Collector-ML-Component":
 

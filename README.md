@@ -13,9 +13,7 @@ Requirements-Collector: (Automating Requirements Specification from Elicitation 
 
 **Demonstration Video:**
 
-<video width="320" height="240" controls>
-  <source src="DRONE.MP4" type="video/mp4">
-</video>
+[![Requirement-Collector-ML-Component Demonstration](https://github.com/spanichella/Requirement-Collector-tool/blob/master/Pipeline_AutomatedRE-RE20-P%26D.png)](https://youtu.be/Baf18V6sN8E)
 
 ### Description of the content of folder "Requirement-Collector-ML-Component":
 

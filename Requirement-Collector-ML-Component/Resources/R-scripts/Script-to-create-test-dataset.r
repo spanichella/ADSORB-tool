@@ -6,8 +6,6 @@ nameOfAttributeID2  <- args[4]
 nameOfAttributeText2  <- args[5]
 nameOfAttributeClass2  <- args[6]
 
-## @author sebastiano panichella
-
 if (!require(stringr)){ install.packages("stringr") } 
 
 #load the libraries...
@@ -28,7 +26,7 @@ oracle_path<- "truth_set_ICSME2015.csv"
 
 if(!is.na(oracle_path2))
 {
-  base_folder<- oracle_path2
+  oracle_path<- oracle_path2
   print("2) argument \"oracle_path2\" used in R by setwd() ")
 }
 

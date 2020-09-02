@@ -1,4 +1,5 @@
 
+
 args <- commandArgs(trailingOnly = TRUE)
 base_folder2 <- args[1]
 trainingSetDirectory2 <- args[2]
@@ -37,6 +38,8 @@ if(!is.na(base_folder2))
 }
 
 setwd(base_folder)
+print("base_folder:")
+print(base_folder)
 
 source("./utilities.R")
 #path software artifacts
@@ -47,10 +50,16 @@ testSetDirectory <- ".../test-set"
 simplifiedOracle_path <- ".../truth_set_ICSME2015-simplified.csv"
 
 
-if(!is.na(trainingSetDirectory2) && !is.na(testSetDirectory2) )
+if( (!is.na(trainingSetDirectory2)) && (!is.na(testSetDirectory2)) )
 {
   trainingSetDirectory<- paste(oracleFolder2,"/training-set",sep="")
   testSetDirectory<- paste(oracleFolder2,"/test-set",sep="")
+  
+  if(!is.na(nameOfAttributeText2) && nameOfAttributeText2=="req_specification")
+    {
+    trainingSetDirectory<- paste(oracleFolder2,"/training-set-Req-Specifications",sep="")
+    testSetDirectory<- paste(oracleFolder2,"/test-set-Req-Specifications",sep="")
+    }
   print("2) argument \"trainingSetDirectory\" given as argumet to the R script ")
   print("3) \"testSetDirectory\" given as argumet to the R script ")
   }
